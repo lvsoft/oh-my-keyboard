@@ -72,7 +72,7 @@ else
  #F_UNROLL_LOOPS = -funroll-loops
 endif
 
-TRGT=/usr/bin/
+TRGT=
 
 CC = $(TRGT)arm-none-eabi-gcc
 CFLAGS = -std=gnu99 $(COMPILE_OPTS)
@@ -153,11 +153,14 @@ reset\n\
 exit
 flash: all
 	@cp $(MAIN_BIN) jtag/flash.bin
-	@echo '$(flash_script)' | nc localhost 4444
+	@echo -e '$(flash_script)' | nc localhost 4444
 	@rm jtag/flash.bin
 
 .PHONY: openocd openocd_stop
 openocd:
+	openocd -f interface/cmsis-dap.cfg -f target/stm32f1x.cfg
+
+openocd-stlink:
 	openocd -f interface/stlink-v2.cfg -f target/stm32f1x_stlink.cfg
 
 openocd-jlink:

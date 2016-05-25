@@ -13,7 +13,7 @@ F_NO_STRICT_ALIASING = -fno-strict-aliasing
 
 COMPILE_OPTS = $(WARNINGS) $(TARGET_OPTS) $(MESSAGES) $(F_NO_STRICT_ALIASING) $(INCLUDE_DIRS) $(DEFINES)
 
-TRGT = /usr/bin/
+TRGT =
 
 CC = $(TRGT)arm-none-eabi-gcc
 CFLAGS = $(COMPILE_OPTS)
