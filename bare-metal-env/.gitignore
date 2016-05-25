@@ -1,0 +1,10 @@
+*.d
+*.t
+*~
+TAGS
+.emacs*
+*.o
+*.map
+*.bin
+*.pyc
+*.elf
