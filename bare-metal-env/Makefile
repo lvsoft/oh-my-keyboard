@@ -30,7 +30,7 @@ STM32LDR_BAUD = 115200
 # [OPTIONAL] Comment out to disable bootloader verification
 STM32LDR_VERIFY = -v
 
-LIB = ../stm32-lib
+LIB = ../../stm32-lib
 
 # [OPTIONAL] Uncomment to use the firmware library
 FWLIB = $(LIB)/STM32F10x_StdPeriph_Driver/libstm32fw.a
@@ -72,7 +72,7 @@ else
  #F_UNROLL_LOOPS = -funroll-loops
 endif
 
-TRGT=/opt/arm/bin/
+TRGT=/usr/bin/
 
 CC = $(TRGT)arm-none-eabi-gcc
 CFLAGS = -std=gnu99 $(COMPILE_OPTS)

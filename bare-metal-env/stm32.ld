@@ -76,7 +76,7 @@ SECTIONS
 	* This is the initialized data section. It is stored in RAM but the initial values
 	* are held in flash and copied to RAM by the startup code
 	*/   
-	.data  : AT ( _sidata )  /* AT makes the LMA follow on in the binary image */
+	.data  :   /* AT makes the LMA follow on in the binary image */
     {
 		. = ALIGN(4);
 		_sdata = . ; /* Used by the startup in order to initialize the .data section */

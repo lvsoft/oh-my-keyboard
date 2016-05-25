@@ -1,6 +1,0 @@
-proc program_device () {
-    reset halt
-    flash probe 0
-    flash write_image erase flash.bin 0x08000000
-    reset
-}
