@@ -3,6 +3,8 @@
 Toolchain
 ---------
 
-MSys2
+EmBitz 0.42
 
-    $ pacman -S netcat
+You can download from http://www.emblocks.org/web/downloads-main
+
+Open hidapp.ebp with EmBitz, press F7 build.
