@@ -1,0 +1,2 @@
+* add support of g++ to linker script and startup*.s
+* USB HID packet n-key support
