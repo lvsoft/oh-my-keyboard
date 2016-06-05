@@ -85,7 +85,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 4
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -125,5 +125,29 @@ S 5400 1700 950  550
 U 5755DB2C
 F0 "main_board_cpld" 60
 F1 "CPLD.sch" 60
+$EndSheet
+$Sheet
+S 2100 3300 1400 950 
+U 57545D59
+F0 "nRF24L01" 60
+F1 "nrf24l01.sch" 60
+$EndSheet
+$Sheet
+S 4100 3300 2050 1000
+U 57545D83
+F0 "BlueTooth" 60
+F1 "bluetooth.sch" 60
+$EndSheet
+$Sheet
+S 2150 4750 1400 900 
+U 5754760F
+F0 "UsbDongle" 60
+F1 "usb_dongle.sch" 60
+$EndSheet
+$Sheet
+S 4150 4750 1700 850 
+U 57549417
+F0 "Touch" 60
+F1 "touch.sch" 60
 $EndSheet
 $EndSCHEMATC
