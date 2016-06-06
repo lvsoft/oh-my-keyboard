@@ -85,7 +85,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -95,15 +95,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L nRF24LU1+ U?
-U 1 1 5754763F
-P 3500 2850
-F 0 "U?" H 3500 2850 60  0000 C CNN
-F 1 "nRF24LU1+" H 3500 2750 60  0000 C CNN
-F 2 "" H 3500 2850 60  0000 C CNN
-F 3 "" H 3500 2850 60  0000 C CNN
-	1    3500 2850
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

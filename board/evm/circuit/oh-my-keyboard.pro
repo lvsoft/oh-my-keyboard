@@ -1,6 +1,6 @@
-update=2016/6/6 8:43:59
+update=2016年06月06日 星期一 23时46分58秒
 version=1
-last_client=eeschema
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/SPB_Clean/kicad_lib
+LibDir=/home/lv/project/hardware/kicad_lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
