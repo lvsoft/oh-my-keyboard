@@ -28,57 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:stm8
-LIBS:stm32
-LIBS:74xgxx
-LIBS:ac-dc
-LIBS:actel
 LIBS:Altera
-LIBS:analog_devices
-LIBS:battery_management
-LIBS:bbd
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:dc-dc
-LIBS:diode
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:ir
-LIBS:Lattice
-LIBS:logo
-LIBS:maxim
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:motor_drivers
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:ttl_ieee
-LIBS:video
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:Zilog
 LIBS:my_kicad
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
@@ -222,34 +172,62 @@ F65 "nWE" I R 11500 4150 60
 F66 "nIRQ" I R 11500 4250 60 
 $EndSheet
 $Sheet
-S 2100 3300 1400 950 
+S 2100 3300 900  800 
 U 57545D59
 F0 "nRF24L01" 60
 F1 "nrf24l01.sch" 60
+F2 "NRF24_CSN" I L 2100 3500 60 
+F3 "NRF24_SCK" I L 2100 3600 60 
+F4 "NRF24_MOSI" I L 2100 3700 60 
+F5 "NRF24_MISO" I L 2100 3800 60 
+F6 "NRF24_IRQ" I L 2100 3900 60 
 $EndSheet
 $Sheet
-S 4100 3300 2050 1000
+S 4100 3300 850  1150
 U 57545D83
 F0 "BlueTooth" 60
 F1 "bluetooth.sch" 60
+F2 "VCC" I L 4100 3450 60 
+F3 "GND" I L 4100 3550 60 
+F4 "SDA" I L 4100 3700 60 
+F5 "SCL" I L 4100 3800 60 
+F6 "SPI_DI" I L 4100 3950 60 
+F7 "SPI_DO" I L 4100 4050 60 
+F8 "SPI_CLK" I L 4100 4150 60 
+F9 "SPI_EN" I L 4100 4250 60 
 $EndSheet
 $Sheet
-S 2150 4750 1400 900 
+S 2100 8900 950  600 
 U 5754760F
 F0 "UsbDongle" 60
 F1 "usb_dongle.sch" 60
 $EndSheet
 $Sheet
-S 4150 4750 1700 850 
+S 4150 4750 850  750 
 U 57549417
 F0 "Touch" 60
 F1 "touch.sch" 60
+F2 "TOUCH_nIRQ" I L 4150 5150 60 
+F3 "TOUCH_SCK" I L 4150 5250 60 
+F4 "TOUCH_SDA" I L 4150 5350 60 
+F5 "VCC" I L 4150 4900 60 
+F6 "GND" I L 4150 5000 60 
 $EndSheet
 $Sheet
-S 2150 6500 1500 1100
+S 2150 6500 650  1100
 U 57593E70
 F0 "TrackPoint" 60
 F1 "trackpoint.sch" 60
+F2 "BUTTON2" I L 2150 6800 60 
+F3 "BUTTON1" I L 2150 6700 60 
+F4 "BUTTON0" I L 2150 6600 60 
+F5 "TP_CLK" I L 2150 6900 60 
+F6 "VCC" I L 2150 7000 60 
+F7 "GND" I L 2150 7100 60 
+F8 "EX.CKL" I L 2150 7200 60 
+F9 "TP_DATA" I L 2150 7300 60 
+F10 "EX.DATA" I L 2150 7400 60 
+F11 "RST" I L 2150 7500 60 
 $EndSheet
 $Sheet
 S 4500 6650 1000 950 
