@@ -28,57 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:stm8
-LIBS:stm32
-LIBS:74xgxx
-LIBS:ac-dc
-LIBS:actel
 LIBS:Altera
-LIBS:analog_devices
-LIBS:battery_management
-LIBS:bbd
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:dc-dc
-LIBS:diode
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:ir
-LIBS:Lattice
-LIBS:logo
-LIBS:maxim
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:motor_drivers
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:ttl_ieee
-LIBS:video
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:Zilog
 LIBS:my_kicad
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
@@ -123,23 +73,23 @@ Wire Wire Line
 	1000 1000 1200 1000
 Wire Wire Line
 	1200 1000 1200 900 
-Text HLabel 1000 1650 0    60   Input ~ 0
+Text HLabel 1000 1100 0    60   Input ~ 0
 GND
 $Comp
 L GND #PWR?
 U 1 1 57564909
-P 1200 1750
-F 0 "#PWR?" H 1200 1500 50  0001 C CNN
-F 1 "GND" H 1200 1600 50  0000 C CNN
-F 2 "" H 1200 1750 50  0000 C CNN
-F 3 "" H 1200 1750 50  0000 C CNN
-	1    1200 1750
+P 1200 1200
+F 0 "#PWR?" H 1200 950 50  0001 C CNN
+F 1 "GND" H 1200 1050 50  0000 C CNN
+F 2 "" H 1200 1200 50  0000 C CNN
+F 3 "" H 1200 1200 50  0000 C CNN
+	1    1200 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 1650 1200 1650
+	1000 1100 1200 1100
 Wire Wire Line
-	1200 1650 1200 1750
+	1200 1100 1200 1200
 $Comp
 L +3V3 #PWR?
 U 1 1 57564B9F
@@ -152,11 +102,7 @@ F 3 "" H 8000 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2300 8000 2450
-Wire Wire Line
-	8000 2450 8000 2800
-Wire Wire Line
-	8000 2800 8000 3100
+	8000 2300 8000 3100
 Connection ~ 8000 3100
 Connection ~ 8100 3100
 Connection ~ 8200 3100
@@ -175,92 +121,13 @@ F 3 "" H 8100 9150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8100 9150 8100 9000
+	8100 9000 8100 9150
 Wire Wire Line
-	8100 9000 8100 9000
-Wire Wire Line
-	8100 9000 8200 9000
-Wire Wire Line
-	8200 9000 8300 9000
-Wire Wire Line
-	8300 9000 8400 9000
-Wire Wire Line
-	8400 9000 8500 9000
+	8100 9000 8500 9000
 Connection ~ 8100 9000
 Connection ~ 8200 9000
 Connection ~ 8300 9000
 Connection ~ 8400 9000
-$Comp
-L USB_OTG P?
-U 1 1 57564F44
-P 15550 6700
-F 0 "P?" H 15875 6575 50  0000 C CNN
-F 1 "USB_OTG" H 15550 6900 50  0000 C CNN
-F 2 "" V 15500 6600 50  0000 C CNN
-F 3 "" V 15500 6600 50  0000 C CNN
-	1    15550 6700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12800 6500 13100 6500
-Wire Wire Line
-	13100 6500 13100 7150
-$Comp
-L GND #PWR?
-U 1 1 57565326
-P 15200 7300
-F 0 "#PWR?" H 15200 7050 50  0001 C CNN
-F 1 "GND" H 15200 7150 50  0000 C CNN
-F 2 "" H 15200 7300 50  0000 C CNN
-F 3 "" H 15200 7300 50  0000 C CNN
-	1    15200 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15250 6900 15200 6900
-Wire Wire Line
-	15200 6750 15200 6900
-Wire Wire Line
-	15200 6900 15200 7100
-Wire Wire Line
-	15200 7100 15200 7300
-Wire Wire Line
-	15200 7100 15650 7100
-Connection ~ 15200 7100
-$Comp
-L +5V #PWR?
-U 1 1 575653D7
-P 15100 5800
-F 0 "#PWR?" H 15100 5650 50  0001 C CNN
-F 1 "+5V" H 15100 5940 50  0000 C CNN
-F 2 "" H 15100 5800 50  0000 C CNN
-F 3 "" H 15100 5800 50  0000 C CNN
-	1    15100 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15100 5800 15100 6250
-Wire Wire Line
-	15100 6250 15100 6500
-Wire Wire Line
-	15100 6500 15250 6500
-Text HLabel 1000 1350 0    60   Input ~ 0
-VCC_5V
-$Comp
-L +5V #PWR?
-U 1 1 57565A69
-P 1200 1250
-F 0 "#PWR?" H 1200 1100 50  0001 C CNN
-F 1 "+5V" H 1200 1390 50  0000 C CNN
-F 2 "" H 1200 1250 50  0000 C CNN
-F 3 "" H 1200 1250 50  0000 C CNN
-	1    1200 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 1250 1200 1350
-Wire Wire Line
-	1200 1350 1000 1350
 $Comp
 L C_Small C?
 U 1 1 57565B12
@@ -350,21 +217,7 @@ F 3 "" H 9300 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2450 8400 2450
-Wire Wire Line
-	8400 2450 8700 2450
-Wire Wire Line
-	8700 2450 9000 2450
-Wire Wire Line
-	9000 2450 9300 2450
-Wire Wire Line
-	9300 2450 9600 2450
-Wire Wire Line
-	9600 2450 9900 2450
-Wire Wire Line
-	9900 2450 10200 2450
-Wire Wire Line
-	10200 2450 10500 2450
+	8000 2450 10500 2450
 Connection ~ 8000 2450
 Connection ~ 8400 2450
 Connection ~ 8700 2450
@@ -374,19 +227,7 @@ Connection ~ 9600 2450
 Connection ~ 9900 2450
 Connection ~ 10200 2450
 Wire Wire Line
-	8400 2650 8700 2650
-Wire Wire Line
-	8700 2650 9000 2650
-Wire Wire Line
-	9000 2650 9300 2650
-Wire Wire Line
-	9300 2650 9600 2650
-Wire Wire Line
-	9600 2650 9900 2650
-Wire Wire Line
-	9900 2650 10200 2650
-Wire Wire Line
-	10200 2650 10500 2650
+	8400 2650 10500 2650
 Connection ~ 8700 2650
 Connection ~ 9000 2650
 Connection ~ 9300 2650
@@ -406,47 +247,6 @@ F 3 "" H 9900 2800 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	9900 2800 9900 2650
-$Comp
-L USBLC6 U?
-U 1 1 57566F45
-P 14350 6750
-F 0 "U?" H 14400 7000 60  0000 C CNN
-F 1 "USBLC6" H 14350 6500 60  0000 C CNN
-F 2 "" H 14350 6750 60  0000 C CNN
-F 3 "" H 14350 6750 60  0000 C CNN
-	1    14350 6750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	13100 7150 15050 7150
-Wire Wire Line
-	15050 7150 15050 6800
-Wire Wire Line
-	15050 6800 15250 6800
-Wire Wire Line
-	14800 6900 14950 6900
-Wire Wire Line
-	14950 6900 14950 6700
-Wire Wire Line
-	14950 6700 15250 6700
-Wire Wire Line
-	14800 6600 15250 6600
-Wire Wire Line
-	15200 6900 15200 7100
-Wire Wire Line
-	14800 6750 15200 6750
-Connection ~ 15200 6900
-Wire Wire Line
-	13900 6750 13800 6750
-Wire Wire Line
-	13800 6750 13800 6250
-Wire Wire Line
-	13800 6250 15100 6250
-Connection ~ 15100 6250
-Wire Wire Line
-	13700 6600 13900 6600
-Wire Wire Line
-	13700 6900 13900 6900
 $Comp
 L R R?
 U 1 1 575677AC
@@ -513,9 +313,7 @@ $EndComp
 Wire Wire Line
 	1550 3200 1550 3150
 Wire Wire Line
-	1550 3500 1550 3600
-Wire Wire Line
-	1550 3600 1550 3750
+	1550 3500 1550 3750
 Wire Wire Line
 	2150 3600 3800 3600
 $Comp
@@ -555,13 +353,9 @@ F 3 "" H 2750 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 3250 2750 3800
+	2750 3250 2750 4000
 Wire Wire Line
-	2750 3800 2750 4000
-Wire Wire Line
-	2750 4000 3600 4000
-Wire Wire Line
-	3600 4000 3800 4000
+	2750 4000 3800 4000
 Wire Wire Line
 	3600 4100 3800 4100
 Wire Wire Line
@@ -579,15 +373,7 @@ F 3 "" H 3350 4650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3100 8100 3100
-Wire Wire Line
-	8100 3100 8200 3100
-Wire Wire Line
-	8200 3100 8300 3100
-Wire Wire Line
-	8300 3100 8400 3100
-Wire Wire Line
-	8400 3100 8500 3100
+	8000 3100 8500 3100
 $Comp
 L L_Small L?
 U 1 1 5756A800
@@ -602,9 +388,7 @@ $EndComp
 Wire Wire Line
 	8600 3100 8600 3000
 Wire Wire Line
-	8000 2800 8600 2800
-Wire Wire Line
-	8600 2800 8800 2800
+	8000 2800 8800 2800
 Connection ~ 8000 2800
 $Comp
 L C_Small C?
@@ -650,9 +434,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 4300 3800 4300
 Wire Wire Line
-	3350 4500 3350 4600
-Wire Wire Line
-	3350 4600 3350 4650
+	3350 4500 3350 4650
 Wire Wire Line
 	3650 4500 3650 4600
 Wire Wire Line
@@ -672,9 +454,7 @@ $EndComp
 Wire Wire Line
 	3150 3800 3800 3800
 Wire Wire Line
-	2600 3800 2750 3800
-Wire Wire Line
-	2750 3800 2850 3800
+	2600 3800 2850 3800
 Connection ~ 2750 3800
 $Comp
 L Jumper_NO_Small JP?
@@ -703,54 +483,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 3800 2400 3800
 $Comp
-L USB_A P?
-U 1 1 5756D14D
-P 15550 4750
-F 0 "P?" H 15750 4550 50  0000 C CNN
-F 1 "USB_A" H 15500 4950 50  0000 C CNN
-F 2 "" V 15500 4650 50  0000 C CNN
-F 3 "" V 15500 4650 50  0000 C CNN
-	1    15550 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L +5V #PWR?
-U 1 1 5756D236
-P 15150 4400
-F 0 "#PWR?" H 15150 4250 50  0001 C CNN
-F 1 "+5V" H 15150 4540 50  0000 C CNN
-F 2 "" H 15150 4400 50  0000 C CNN
-F 3 "" H 15150 4400 50  0000 C CNN
-	1    15150 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15150 4400 15150 4550
-Wire Wire Line
-	15150 4550 15250 4550
-$Comp
-L GND #PWR?
-U 1 1 5756D334
-P 15200 5150
-F 0 "#PWR?" H 15200 4900 50  0001 C CNN
-F 1 "GND" H 15200 5000 50  0000 C CNN
-F 2 "" H 15200 5150 50  0000 C CNN
-F 3 "" H 15200 5150 50  0000 C CNN
-	1    15200 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15200 4850 15200 5100
-Wire Wire Line
-	15200 5100 15200 5150
-Wire Wire Line
-	15200 4850 15250 4850
-Wire Wire Line
-	15650 5050 15650 5100
-Wire Wire Line
-	15650 5100 15200 5100
-Connection ~ 15200 5100
-$Comp
 L R R?
 U 1 1 5756D63A
 P 13750 4550
@@ -777,25 +509,9 @@ Wire Wire Line
 Wire Wire Line
 	13600 4700 13600 4550
 Wire Wire Line
-	13900 4550 14000 4550
-Wire Wire Line
-	14000 4550 14000 4650
-Wire Wire Line
-	14000 4650 15250 4650
-Wire Wire Line
-	15250 4750 14000 4750
-Wire Wire Line
-	14000 4750 14000 4850
-Wire Wire Line
-	14000 4850 13900 4850
-Wire Wire Line
 	12800 4800 13600 4800
 Wire Wire Line
 	13600 4800 13600 4850
-Text Notes 15850 4800 0    60   ~ 0
-USB host\nconnect to other usb hid devices\nused for test purpose
-Text Notes 15850 6800 0    60   ~ 0
-USB micro connector\nconnect to host instead of wireless link\ncharge battery\n
 Text Notes 1250 3700 1    60   ~ 0
 Reset
 Text Label 2350 3600 0    60   ~ 0
@@ -917,9 +633,7 @@ F 3 "" H 13750 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13750 2500 13750 2700
-Wire Wire Line
-	13750 2700 13750 2800
+	13750 2500 13750 2800
 Wire Wire Line
 	13750 2500 13800 2500
 Wire Wire Line
@@ -950,11 +664,7 @@ F 3 "" H 14200 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14200 1600 14200 1750
-Wire Wire Line
-	14200 1750 14200 1900
-Wire Wire Line
-	14200 1900 14200 1950
+	14200 1600 14200 1950
 Wire Wire Line
 	14200 2700 13750 2700
 Connection ~ 13750 2700
@@ -994,4 +704,12 @@ Wire Wire Line
 	15500 2350 15500 1750
 Wire Wire Line
 	15500 1750 14950 1750
+Text HLabel 13700 6900 2    60   Input ~ 0
+Device_D+
+Text HLabel 13700 6600 2    60   Input ~ 0
+Device_D-
+Text HLabel 13900 4850 2    60   Input ~ 0
+Host_D+
+Text HLabel 13900 4550 2    60   Input ~ 0
+Host_D-
 $EndSCHEMATC
