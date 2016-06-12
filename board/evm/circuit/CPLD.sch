@@ -28,63 +28,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:stm8
-LIBS:stm32
-LIBS:74xgxx
-LIBS:ac-dc
-LIBS:actel
 LIBS:Altera
-LIBS:analog_devices
-LIBS:battery_management
-LIBS:bbd
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:dc-dc
-LIBS:diode
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:ir
-LIBS:Lattice
-LIBS:logo
-LIBS:maxim
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:motor_drivers
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:ttl_ieee
-LIBS:video
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:Zilog
+LIBS:my_kicad
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 11
+Sheet 4 12
 Title ""
 Date ""
 Rev ""
@@ -436,9 +387,9 @@ Wire Wire Line
 Wire Wire Line
 	3200 5150 4400 5150
 Wire Wire Line
-	3400 4750 3400 4950
+	3400 4950 3400 4750
 Wire Wire Line
-	1400 4750 3400 4750
+	3400 4750 1400 4750
 Wire Wire Line
 	1400 4750 1400 5000
 Wire Wire Line
@@ -589,4 +540,26 @@ Text HLabel 6200 2350 1    60   Input ~ 0
 nWE
 Text HLabel 6100 2350 1    60   Input ~ 0
 nIRQ
+Text HLabel 6000 2350 1    60   Input ~ 0
+GPIO0
+Text HLabel 5900 2350 1    60   Input ~ 0
+GPIO1
+Text HLabel 5800 2350 1    60   Input ~ 0
+GPIO2
+Text HLabel 5700 2350 1    60   Input ~ 0
+GPIO3
+Text HLabel 5600 2350 1    60   Input ~ 0
+GPIO4
+Text HLabel 5300 2350 1    60   Input ~ 0
+GPIO5
+Text HLabel 5200 2350 1    60   Input ~ 0
+GPIO6
+Text HLabel 5100 2350 1    60   Input ~ 0
+GPIO7
+Text HLabel 5000 2350 1    60   Input ~ 0
+GPIO8
+Text HLabel 4900 2350 1    60   Input ~ 0
+GPIO9
+Text HLabel 4800 2350 1    60   Input ~ 0
+GPIO10
 $EndSCHEMATC
