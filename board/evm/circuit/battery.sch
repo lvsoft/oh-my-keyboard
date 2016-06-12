@@ -30,12 +30,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:Altera
 LIBS:my_kicad
+LIBS:Oscillators
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 11 12
+Sheet 10 12
 Title ""
 Date ""
 Rev ""
@@ -677,9 +678,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 7650 4350 7650
 Wire Wire Line
-	4350 7500 4350 7650
+	4350 7650 4350 7500
 Wire Wire Line
-	3150 7500 4350 7500
+	4350 7500 3150 7500
 Wire Wire Line
 	3150 7400 4500 7400
 Wire Wire Line
@@ -745,9 +746,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 7950 4400 7950
 Wire Wire Line
-	4400 8350 4400 7950
+	4400 7950 4400 8350
 Wire Wire Line
-	3550 8350 4400 8350
+	4400 8350 3550 8350
 Text HLabel 3550 8350 0    60   Input ~ 0
 BAT_SCL
 Text HLabel 3550 8450 0    60   Input ~ 0

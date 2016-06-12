@@ -30,12 +30,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:Altera
 LIBS:my_kicad
+LIBS:Oscillators
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 10 12
+Sheet 9 12
 Title ""
 Date ""
 Rev ""

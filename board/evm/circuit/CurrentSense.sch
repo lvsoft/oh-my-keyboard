@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:Altera
 LIBS:my_kicad
+LIBS:Oscillators
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END

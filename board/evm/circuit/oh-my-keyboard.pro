@@ -1,4 +1,4 @@
-update=2016/6/11 15:38:36
+update=2016/6/13 3:12:04
 version=1
 last_client=eeschema
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/SPB_Clean/kicad_lib
+LibDir=C:/SPB_Clean/kicad_lib;../../../board
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -140,3 +140,4 @@ LibName108=/opt/kicad-library/library/xilinx
 LibName109=/opt/kicad-library/library/Zilog
 LibName110=Altera
 LibName111=my_kicad
+LibName112=Oscillators

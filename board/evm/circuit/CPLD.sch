@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:Altera
 LIBS:my_kicad
+LIBS:Oscillators
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END
@@ -129,23 +130,23 @@ $EndComp
 $Comp
 L +3V3 #PWR?
 U 1 1 5755D2B4
-P 2850 3950
-F 0 "#PWR?" H 2850 3800 50  0001 C CNN
-F 1 "+3V3" H 2850 4090 50  0000 C CNN
-F 2 "" H 2850 3950 50  0000 C CNN
-F 3 "" H 2850 3950 50  0000 C CNN
-	1    2850 3950
+P 3750 3950
+F 0 "#PWR?" H 3750 3800 50  0001 C CNN
+F 1 "+3V3" H 3750 4090 50  0000 C CNN
+F 2 "" H 3750 3950 50  0000 C CNN
+F 3 "" H 3750 3950 50  0000 C CNN
+	1    3750 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L +3V3 #PWR?
 U 1 1 5755D2EB
-P 2850 3550
-F 0 "#PWR?" H 2850 3400 50  0001 C CNN
-F 1 "+3V3" H 2850 3690 50  0000 C CNN
-F 2 "" H 2850 3550 50  0000 C CNN
-F 3 "" H 2850 3550 50  0000 C CNN
-	1    2850 3550
+P 3750 3550
+F 0 "#PWR?" H 3750 3400 50  0001 C CNN
+F 1 "+3V3" H 3750 3690 50  0000 C CNN
+F 2 "" H 3750 3550 50  0000 C CNN
+F 3 "" H 3750 3550 50  0000 C CNN
+	1    3750 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -313,21 +314,21 @@ F 3 "" H 2950 5750 50  0000 C CNN
 	1    2950 5750
 	1    0    0    -1  
 $EndComp
+Text HLabel 5600 5550 3    60   Input ~ 0
+LED_Shift_CLK
+Text HLabel 5700 5550 3    60   Input ~ 0
+LED_Storage_CLK
 Text HLabel 5200 5550 3    60   Input ~ 0
-LED_Shift_CLK0
-Text HLabel 5500 5550 3    60   Input ~ 0
-LED_Storage_CLK0
-Text HLabel 5000 5550 3    60   Input ~ 0
 LED_nCLR
-Text HLabel 5100 5550 3    60   Input ~ 0
+Text HLabel 5500 5550 3    60   Input ~ 0
 LED_nOE
 Text HLabel 4400 3050 0    60   Input ~ 0
 KEY_Serial_IN1
-Text HLabel 4800 5550 3    60   Input ~ 0
+Text HLabel 5000 5550 3    60   Input ~ 0
 KEY_nPL
 Text HLabel 4400 2850 0    60   Input ~ 0
 KEY_CLK
-Text HLabel 4900 5550 3    60   Input ~ 0
+Text HLabel 5100 5550 3    60   Input ~ 0
 KEY_nCE
 Text HLabel 4400 3150 0    60   Input ~ 0
 KEY_Serial_IN2
@@ -337,152 +338,25 @@ Text HLabel 4400 3350 0    60   Input ~ 0
 KEY_Serial_IN4
 Text HLabel 4400 3450 0    60   Input ~ 0
 KEY_Serial_IN5
-Text HLabel 4400 3850 0    60   Input ~ 0
-KEY_Serial_IN6
-Text HLabel 4400 4150 0    60   Input ~ 0
-KEY_Serial_IN8
-Text HLabel 4400 4250 0    60   Input ~ 0
-KEY_Serial_IN9
-Wire Wire Line
-	1200 650  1200 750 
-Wire Wire Line
-	1200 750  950  750 
-Wire Wire Line
-	1200 1150 1200 1000
-Wire Wire Line
-	1200 1000 950  1000
-Wire Wire Line
-	4400 3550 3750 3550
-Wire Wire Line
-	4400 3950 3750 3950
-Wire Wire Line
-	4100 3750 4400 3750
-Wire Wire Line
-	4400 3650 4300 3650
-Wire Wire Line
-	4300 3650 4300 3750
-Connection ~ 4300 3750
-Wire Wire Line
-	1300 4100 1300 4900
-Wire Wire Line
-	1300 4900 1450 4900
-Wire Wire Line
-	1450 5100 1300 5100
-Wire Wire Line
-	1300 5100 1300 5300
-Wire Wire Line
-	2700 4900 4300 4900
-Wire Wire Line
-	4400 4950 3400 4950
-Wire Wire Line
-	2700 5100 3200 5100
-Wire Wire Line
-	2700 5000 3200 5000
-Wire Wire Line
-	3200 5000 3200 5050
-Wire Wire Line
-	3200 5050 4400 5050
-Wire Wire Line
-	3200 5100 3200 5150
-Wire Wire Line
-	3200 5150 4400 5150
-Wire Wire Line
-	3400 4950 3400 4750
-Wire Wire Line
-	3400 4750 1400 4750
-Wire Wire Line
-	1400 4750 1400 5000
-Wire Wire Line
-	1400 5000 1450 5000
-Wire Wire Line
-	5400 5550 5400 5750
-Wire Wire Line
-	5300 5850 5300 5550
-Wire Wire Line
-	6700 5900 6700 5550
-Wire Wire Line
-	6800 5800 6800 5550
-Wire Wire Line
-	5400 1850 5400 2350
-Wire Wire Line
-	6800 1850 6800 2350
-Wire Wire Line
-	7950 3750 7600 3750
-Wire Wire Line
-	8150 3950 7600 3950
-Wire Wire Line
-	7600 4250 7950 4250
-Wire Wire Line
-	8150 4350 7600 4350
-Wire Wire Line
-	6900 2350 6900 2050
-Wire Wire Line
-	5500 2050 5500 2350
-Wire Wire Line
-	1300 4200 3000 4200
-Connection ~ 1300 4200
-Connection ~ 2800 4200
-Connection ~ 2900 4200
-Wire Wire Line
-	2800 4600 2800 5100
-Connection ~ 2800 5100
-Wire Wire Line
-	2900 4600 2900 4900
-Connection ~ 2900 4900
-Wire Wire Line
-	3000 4600 3000 4750
-Connection ~ 3000 4750
-Wire Wire Line
-	2950 5300 2950 5000
-Connection ~ 2950 5000
-Wire Wire Line
-	2950 5750 2950 5600
 Text HLabel 4400 4350 0    60   Input ~ 0
-KEY_Serial_IN10
+KEY_Serial_IN8
 Text HLabel 4400 4450 0    60   Input ~ 0
-KEY_Serial_IN11
+KEY_Serial_IN9
 Text HLabel 4400 4550 0    60   Input ~ 0
-KEY_Serial_IN12
+KEY_Serial_IN10
 Text HLabel 4400 4650 0    60   Input ~ 0
-KEY_Serial_IN13
+KEY_Serial_IN11
 Text HLabel 4400 4750 0    60   Input ~ 0
-KEY_Serial_IN14
+KEY_Serial_IN12
 Text HLabel 4200 4850 0    60   Input ~ 0
+KEY_Serial_IN13
+Text HLabel 4800 5550 3    60   Input ~ 0
+KEY_Serial_IN14
+Text HLabel 4900 5550 3    60   Input ~ 0
 KEY_Serial_IN15
-Wire Wire Line
-	4400 4850 4200 4850
-Wire Wire Line
-	4300 4900 4300 4850
-Connection ~ 4300 4850
-Text HLabel 5700 5550 3    60   Input ~ 0
-LED_Storage_CLK1
-Text HLabel 5900 5550 3    60   Input ~ 0
-LED_Storage_CLK2
-Text HLabel 6100 5550 3    60   Input ~ 0
-LED_Storage_CLK3
-Text HLabel 6300 5550 3    60   Input ~ 0
-LED_Storage_CLK4
-Text HLabel 5600 5550 3    60   Input ~ 0
-LED_Shift_CLK1
 Text HLabel 5800 5550 3    60   Input ~ 0
-LED_Shift_CLK2
-Text HLabel 6000 5550 3    60   Input ~ 0
-LED_Shift_CLK3
-Text HLabel 6200 5550 3    60   Input ~ 0
-LED_Shift_CLK4
-Text HLabel 6400 5550 3    60   Input ~ 0
-LED_Shift_CLK5
-Text HLabel 6500 5550 3    60   Input ~ 0
-LED_Storage_CLK5
-Text HLabel 6600 5550 3    60   Input ~ 0
-LED_Shift_CLK6
-Text HLabel 6900 5550 3    60   Input ~ 0
-LED_Storage_CLK6
-Text HLabel 7000 5550 3    60   Input ~ 0
-LED_Shift_CLK7
-Text HLabel 7100 5550 3    60   Input ~ 0
-LED_Shift_CLK7
-Text HLabel 4400 4050 0    60   Input ~ 0
+LED_DATA0
+Text HLabel 4400 4250 0    60   Input ~ 0
 KEY_Serial_IN7
 Text HLabel 7600 5050 2    60   Input ~ 0
 D0
@@ -562,4 +436,177 @@ Text HLabel 4900 2350 1    60   Input ~ 0
 GPIO9
 Text HLabel 4800 2350 1    60   Input ~ 0
 GPIO10
+Text HLabel 5900 5550 3    60   Input ~ 0
+LED_DATA1
+Text HLabel 6000 5550 3    60   Input ~ 0
+LED_DATA2
+Text HLabel 6100 5550 3    60   Input ~ 0
+LED_DATA3
+Text HLabel 6200 5550 3    60   Input ~ 0
+LED_DATA4
+Text HLabel 6300 5550 3    60   Input ~ 0
+LED_DATA5
+Text HLabel 6400 5550 3    60   Input ~ 0
+LED_DATA6
+Text HLabel 6500 5550 3    60   Input ~ 0
+LED_DATA7
+Text HLabel 4400 4150 0    60   Input ~ 0
+KEY_Serial_IN6
+$Comp
+L IQXO/7X X?
+U 1 1 5761EEAB
+P 2650 3750
+F 0 "X?" H 2650 4050 50  0000 C CNN
+F 1 "IQXO/7X" H 2650 3750 50  0000 C CNN
+F 2 "" H 2650 3750 50  0000 C CNN
+F 3 "" H 2650 3750 50  0000 C CNN
+	1    2650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5761EF5E
+P 3300 3800
+F 0 "#PWR?" H 3300 3650 50  0001 C CNN
+F 1 "+3V3" H 3300 3940 50  0000 C CNN
+F 2 "" H 3300 3800 50  0000 C CNN
+F 3 "" H 3300 3800 50  0000 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5761F007
+P 2050 3900
+F 0 "#PWR?" H 2050 3650 50  0001 C CNN
+F 1 "GND" H 2050 3750 50  0000 C CNN
+F 2 "" H 2050 3900 50  0000 C CNN
+F 3 "" H 2050 3900 50  0000 C CNN
+	1    2050 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 650  1200 750 
+Wire Wire Line
+	1200 750  950  750 
+Wire Wire Line
+	1200 1150 1200 1000
+Wire Wire Line
+	1200 1000 950  1000
+Wire Wire Line
+	4400 3550 3750 3550
+Wire Wire Line
+	4400 3950 3750 3950
+Wire Wire Line
+	4100 3750 4400 3750
+Wire Wire Line
+	4400 3650 4300 3650
+Wire Wire Line
+	4300 3650 4300 3750
+Connection ~ 4300 3750
+Wire Wire Line
+	1300 4100 1300 4900
+Wire Wire Line
+	1300 4900 1450 4900
+Wire Wire Line
+	1450 5100 1300 5100
+Wire Wire Line
+	1300 5100 1300 5300
+Wire Wire Line
+	2700 4900 4300 4900
+Wire Wire Line
+	4400 4950 3400 4950
+Wire Wire Line
+	2700 5100 3200 5100
+Wire Wire Line
+	2700 5000 3200 5000
+Wire Wire Line
+	3200 5000 3200 5050
+Wire Wire Line
+	3200 5050 4400 5050
+Wire Wire Line
+	3200 5100 3200 5150
+Wire Wire Line
+	3200 5150 4400 5150
+Wire Wire Line
+	3400 4750 3400 4950
+Wire Wire Line
+	1400 4750 3400 4750
+Wire Wire Line
+	1400 4750 1400 5000
+Wire Wire Line
+	1400 5000 1450 5000
+Wire Wire Line
+	5400 5550 5400 5750
+Wire Wire Line
+	5300 5850 5300 5550
+Wire Wire Line
+	6700 5900 6700 5550
+Wire Wire Line
+	6800 5800 6800 5550
+Wire Wire Line
+	5400 1850 5400 2350
+Wire Wire Line
+	6800 1850 6800 2350
+Wire Wire Line
+	7950 3750 7600 3750
+Wire Wire Line
+	8150 3950 7600 3950
+Wire Wire Line
+	7600 4250 7950 4250
+Wire Wire Line
+	8150 4350 7600 4350
+Wire Wire Line
+	6900 2350 6900 2050
+Wire Wire Line
+	5500 2050 5500 2350
+Wire Wire Line
+	1300 4200 3000 4200
+Connection ~ 1300 4200
+Connection ~ 2800 4200
+Connection ~ 2900 4200
+Wire Wire Line
+	2800 4600 2800 5100
+Connection ~ 2800 5100
+Wire Wire Line
+	2900 4600 2900 4900
+Connection ~ 2900 4900
+Wire Wire Line
+	3000 4600 3000 4750
+Connection ~ 3000 4750
+Wire Wire Line
+	2950 5300 2950 5000
+Connection ~ 2950 5000
+Wire Wire Line
+	2950 5750 2950 5600
+Wire Wire Line
+	4200 4850 4400 4850
+Wire Wire Line
+	4300 4900 4300 4850
+Connection ~ 4300 4850
+Wire Wire Line
+	3250 3600 3450 3600
+Wire Wire Line
+	3450 3600 3450 3850
+Wire Wire Line
+	3450 3850 4400 3850
+Wire Wire Line
+	3250 3900 3300 3900
+Wire Wire Line
+	3300 3900 3300 3800
+NoConn ~ 2050 3600
+Text HLabel 4400 2950 0    60   Input ~ 0
+KEY_Serial_IN0
+Text HLabel 6600 5550 3    60   Input ~ 0
+GPIO11
+Text HLabel 6900 5550 3    60   Input ~ 0
+GPIO12
+Text HLabel 7000 5550 3    60   Input ~ 0
+GPIO13
+Text HLabel 7100 5550 3    60   Input ~ 0
+GPIO14
+Text HLabel 7200 5550 3    60   Input ~ 0
+GPIO15
+Text HLabel 7600 5150 2    60   Input ~ 0
+GPIO16
 $EndSCHEMATC
