@@ -103,11 +103,7 @@ F 3 "" H 8000 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2300 8000 2450
-Wire Wire Line
-	8000 2450 8000 2800
-Wire Wire Line
-	8000 2800 8000 3100
+	8000 2300 8000 3100
 Connection ~ 8000 3100
 Connection ~ 8100 3100
 Connection ~ 8200 3100
@@ -128,13 +124,7 @@ $EndComp
 Wire Wire Line
 	8100 9000 8100 9150
 Wire Wire Line
-	8100 9000 8200 9000
-Wire Wire Line
-	8200 9000 8300 9000
-Wire Wire Line
-	8300 9000 8400 9000
-Wire Wire Line
-	8400 9000 8500 9000
+	8100 9000 8500 9000
 Connection ~ 8100 9000
 Connection ~ 8200 9000
 Connection ~ 8300 9000
@@ -228,21 +218,7 @@ F 3 "" H 9300 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2450 8400 2450
-Wire Wire Line
-	8400 2450 8700 2450
-Wire Wire Line
-	8700 2450 9000 2450
-Wire Wire Line
-	9000 2450 9300 2450
-Wire Wire Line
-	9300 2450 9600 2450
-Wire Wire Line
-	9600 2450 9900 2450
-Wire Wire Line
-	9900 2450 10200 2450
-Wire Wire Line
-	10200 2450 10500 2450
+	8000 2450 10500 2450
 Connection ~ 8000 2450
 Connection ~ 8400 2450
 Connection ~ 8700 2450
@@ -252,19 +228,7 @@ Connection ~ 9600 2450
 Connection ~ 9900 2450
 Connection ~ 10200 2450
 Wire Wire Line
-	8400 2650 8700 2650
-Wire Wire Line
-	8700 2650 9000 2650
-Wire Wire Line
-	9000 2650 9300 2650
-Wire Wire Line
-	9300 2650 9600 2650
-Wire Wire Line
-	9600 2650 9900 2650
-Wire Wire Line
-	9900 2650 10200 2650
-Wire Wire Line
-	10200 2650 10500 2650
+	8400 2650 10500 2650
 Connection ~ 8700 2650
 Connection ~ 9000 2650
 Connection ~ 9300 2650
@@ -348,9 +312,7 @@ $EndComp
 Wire Wire Line
 	1550 3200 1550 3150
 Wire Wire Line
-	1550 3500 1550 3600
-Wire Wire Line
-	1550 3600 1550 3750
+	1550 3500 1550 3750
 Wire Wire Line
 	2150 3600 3800 3600
 $Comp
@@ -390,9 +352,7 @@ F 3 "" H 2750 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 4100 3700 4100
-Wire Wire Line
-	3700 4100 3800 4100
+	2750 4100 3800 4100
 $Comp
 L GND #PWR?
 U 1 1 5756A4C9
@@ -405,15 +365,7 @@ F 3 "" H 3350 4650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3100 8100 3100
-Wire Wire Line
-	8100 3100 8200 3100
-Wire Wire Line
-	8200 3100 8300 3100
-Wire Wire Line
-	8300 3100 8400 3100
-Wire Wire Line
-	8400 3100 8500 3100
+	8000 3100 8500 3100
 $Comp
 L L_Small L?
 U 1 1 5756A800
@@ -428,9 +380,7 @@ $EndComp
 Wire Wire Line
 	8600 3100 8600 3000
 Wire Wire Line
-	8000 2800 8600 2800
-Wire Wire Line
-	8600 2800 8800 2800
+	8000 2800 8800 2800
 Connection ~ 8000 2800
 $Comp
 L C_Small C?
@@ -476,9 +426,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 4300 3800 4300
 Wire Wire Line
-	3350 4500 3350 4600
-Wire Wire Line
-	3350 4600 3350 4650
+	3350 4500 3350 4650
 Wire Wire Line
 	3650 4500 3650 4600
 Wire Wire Line
@@ -519,8 +467,6 @@ F 3 "" H 14000 4850 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	12800 4700 13850 4700
-Wire Wire Line
-	13850 4700 13850 4700
 Wire Wire Line
 	12800 4800 13850 4800
 Text Notes 1250 3700 1    60   ~ 0
@@ -654,11 +600,7 @@ $EndComp
 Wire Wire Line
 	14800 3050 14700 3050
 Wire Wire Line
-	14800 2750 14800 2850
-Wire Wire Line
-	14800 2850 14800 3050
-Wire Wire Line
-	14800 3050 14800 3150
+	14800 2750 14800 3150
 $Comp
 L GND #PWR?
 U 1 1 5760FB93
@@ -730,7 +672,7 @@ Text HLabel 12800 8200 2    60   Input ~ 0
 SPI3_MOSI
 Text HLabel 12800 5100 2    60   Input ~ 0
 SPI3_NSS
-Text HLabel 12800 6200 2    60   Input ~ 0
+Text HLabel 12800 6500 2    60   Input ~ 0
 SPI2_NSS
 Text HLabel 12800 6300 2    60   Input ~ 0
 I2C2_SCL
@@ -779,9 +721,9 @@ Wire Wire Line
 Wire Wire Line
 	12800 3900 12800 3900
 Wire Wire Line
-	12800 4500 12800 4500
+	12800 4500 15050 4500
 Wire Wire Line
-	12800 4600 12800 4600
+	12800 4600 15150 4600
 Wire Wire Line
 	12800 4900 13150 4900
 Wire Wire Line
@@ -921,7 +863,6 @@ Wire Wire Line
 	13750 8400 13700 8400
 Wire Wire Line
 	13300 8400 12800 8400
-NoConn ~ 12800 6500
 NoConn ~ 12800 6100
 NoConn ~ 3800 5300
 NoConn ~ 3800 5400
@@ -954,10 +895,6 @@ $EndComp
 Wire Wire Line
 	3750 3800 3800 3800
 Wire Wire Line
-	12800 4500 15050 4500
-Wire Wire Line
-	12800 4600 15150 4600
-Wire Wire Line
 	15150 4600 15150 4500
 $Comp
 L CONN_01X03 P?
@@ -985,4 +922,5 @@ Text Label 13450 4500 0    60   ~ 0
 USART_TTL_TX
 Text Label 13450 4600 0    60   ~ 0
 USART_TTL_RX
+NoConn ~ 12800 6200
 $EndSCHEMATC
