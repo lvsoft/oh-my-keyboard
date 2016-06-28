@@ -28,9 +28,58 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:stm8
+LIBS:stm32
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
 LIBS:Altera
-LIBS:my_kicad
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
 LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:my_kicad
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END
@@ -85,7 +134,7 @@ U 1 1 575D73D4
 P 2400 2200
 F 0 "U17" H 2450 2500 60  0000 C CNN
 F 1 "MP2467" H 2400 1900 60  0000 C CNN
-F 2 "" H 2650 1900 60  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm" H 2650 1900 60  0001 C CNN
 F 3 "" H 2650 1900 60  0000 C CNN
 	1    2400 2200
 	-1   0    0    -1  
@@ -448,7 +497,7 @@ U 1 1 575DC0C9
 P 8000 1700
 F 0 "U20" H 7950 1900 50  0000 L CNN
 F 1 "NE5532" H 7950 1450 50  0000 L CNN
-F 2 "" H 8000 1700 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8000 1700 50  0001 C CNN
 F 3 "" H 8000 1700 50  0000 C CNN
 	1    8000 1700
 	1    0    0    -1  
@@ -651,7 +700,7 @@ U 2 1 575DE1F5
 P 8000 3750
 F 0 "U20" H 7950 3950 50  0000 L CNN
 F 1 "NE5532" H 7950 3500 50  0000 L CNN
-F 2 "" H 8000 3750 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8000 3750 50  0001 C CNN
 F 3 "" H 8000 3750 50  0000 C CNN
 	2    8000 3750
 	1    0    0    -1  
@@ -955,7 +1004,7 @@ U 1 1 575E7B0B
 P 11900 5300
 F 0 "U22" H 12370 5450 50  0000 C CNN
 F 1 "HCPL2630" H 12520 5150 50  0000 C CNN
-F 2 "" H 11900 5300 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 11900 5300 50  0001 C CNN
 F 3 "" H 11900 5300 50  0000 C CNN
 	1    11900 5300
 	1    0    0    -1  
@@ -1035,7 +1084,7 @@ U 2 1 575EB8C5
 P 11900 6750
 F 0 "U22" H 12370 6900 50  0000 C CNN
 F 1 "HCPL2630" H 12520 6600 50  0000 C CNN
-F 2 "" H 11900 6750 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 11900 6750 50  0001 C CNN
 F 3 "" H 11900 6750 50  0000 C CNN
 	2    11900 6750
 	1    0    0    -1  

@@ -28,9 +28,58 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:stm8
+LIBS:stm32
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
 LIBS:Altera
-LIBS:my_kicad
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
 LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:my_kicad
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END
@@ -63,7 +112,7 @@ U 1 1 5759ACA2
 P 5200 2250
 F 0 "U12" H 4850 2800 60  0000 C CNN
 F 1 "TPS61088" V 5050 2350 60  0000 C CNN
-F 2 "" H 5200 2250 60  0001 C CNN
+F 2 "My custom footprint:S-PVQFN-N20" H 5200 2250 60  0001 C CNN
 F 3 "" H 5200 2250 60  0000 C CNN
 	1    5200 2250
 	1    0    0    -1  
@@ -1113,7 +1162,7 @@ U 1 1 575BF96E
 P 10000 7250
 F 0 "U15" H 10000 7500 60  0000 C CNN
 F 1 "FP6291" H 10000 7000 60  0000 C CNN
-F 2 "" H 9950 7200 60  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 9950 7200 60  0001 C CNN
 F 3 "" H 9950 7200 60  0000 C CNN
 	1    10000 7250
 	1    0    0    -1  
@@ -1361,7 +1410,7 @@ U 1 1 575CA9D5
 P 13300 7250
 F 0 "U16" H 13300 7500 60  0000 C CNN
 F 1 "FP6291" H 13300 7000 60  0000 C CNN
-F 2 "" H 13250 7200 60  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 13250 7200 60  0001 C CNN
 F 3 "" H 13250 7200 60  0000 C CNN
 	1    13300 7250
 	1    0    0    -1  
@@ -1989,7 +2038,7 @@ U 1 1 57629011
 P 7050 3950
 F 0 "U14" H 7050 4200 60  0000 C CNN
 F 1 "NT6008" H 7050 3700 60  0000 C CNN
-F 2 "" H 7300 3500 60  0001 C CNN
+F 2 "My custom footprint:TSOT23-8L" H 7300 3500 60  0001 C CNN
 F 3 "" H 7300 3500 60  0000 C CNN
 	1    7050 3950
 	1    0    0    -1  

@@ -28,9 +28,58 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:stm8
+LIBS:stm32
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
 LIBS:Altera
-LIBS:my_kicad
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
 LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:my_kicad
 LIBS:oh-my-keyboard-cache
 EELAYER 25 0
 EELAYER END
@@ -581,7 +630,7 @@ U 1 1 5760EAAF
 P 13950 3200
 F 0 "U25" H 13950 3400 60  0000 C CNN
 F 1 "W25Q32" H 13950 2950 60  0000 C CNN
-F 2 "" H 13950 3200 60  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 13950 3200 60  0001 C CNN
 F 3 "" H 13950 3200 60  0000 C CNN
 	1    13950 3200
 	1    0    0    -1  
